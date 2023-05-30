@@ -8,5 +8,10 @@
     "cleanRepos": "rm -rf ./repositories"
   },
   "author": "Leonardo Muniz",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "path": "^0.12.7",
+    "shelljs": "^0.8.5"
+  }
 }

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutorial</title>
+  </head>
+  <body>
+    <h1>How to render HTML file in Express.js</h1>
+    <label for="userName">NOME DE USUARIO DO GITHUB</label>
+    <input id="userName" type="text" placeholder="digite um usuario do linkedin">
+    <button id="btn">ENVIAR</button>
+  </body>
+  <script>
+    const shell = require('../helpers/shellHelper.js') 
+    const button = document.querySelector('#btn')
+    button.addEventListener('click',()=>{
+      let userName = document.querySelector('#userName').value
+      if (!userName) {
+        return false
+      }
+      alert(`Bem vindo meu brother ${userName}`)
+      shell.clonnerRepository(userName, 'leonardommuniz/autoClone')
+    })
+  </script>
+</html>
