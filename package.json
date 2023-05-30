@@ -1,0 +1,12 @@
+{
+  "name": "autoclone",
+  "version": "1.0.0",
+  "description": "An automater for cloning projects from github in docker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cleanRepos": "rm -rf ./repositories"
+  },
+  "author": "Leonardo Muniz",
+  "license": "ISC"
+}
